@@ -11,7 +11,7 @@ const FetchFile = () => {
             setDebouncedInputValue(inputSearch);
         }, 1000)
         return (() => clearTimeout(debouncedValue));
-    }, [inputSearch])
+    }, [inputSearch]) 
 
     const handleSearchInput = (e) => {
         // console.log(e.target.value);

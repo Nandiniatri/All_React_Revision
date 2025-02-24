@@ -6,6 +6,7 @@ import ArrayProblem from "../ArrayQuestions/file1";
 import FetchFile from "../CustomHook/Fetch/fetchFile";
 import UseModal from "./Modal2/useModal";
 import ApiFetch from "../ApiFetchwithloading&error/apiFetch";
+import DebouncedInputValue from "../DebouncedInputValue/debouncingInput";
 
 
 const ComponentFile = () => {
@@ -20,6 +21,7 @@ const ComponentFile = () => {
             {/* <FetchFile /> */}
             {/* <UseModal /> */}
             {/* <ApiFetch /> */}
+            {/* <DebouncedInputValue /> */}
         </>
     )
 }
