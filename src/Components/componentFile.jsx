@@ -7,6 +7,13 @@ import FetchFile from "../CustomHook/Fetch/fetchFile";
 import UseModal from "./Modal2/useModal";
 import ApiFetch from "../ApiFetchwithloading&error/apiFetch";
 import DebouncedInputValue from "../DebouncedInputValue/debouncingInput";
+import UseRefFile from "../Hooks/useRef/UseRefFile1";
+import UseMYMOdal from "./Modal3/useModal";
+import UseModal4 from "./Modal4/useModal4";
+import DebouncedFormValue from "../Debouncing/debouncedFormValue";
+import TimerComponent from "../TimerComponent/timerComponent";
+import WindowFolder from "../Window/window";
+import InputLocal from "../LocalStorageQuestion/inputlocal";
 
 
 const ComponentFile = () => {
@@ -22,6 +29,13 @@ const ComponentFile = () => {
             {/* <UseModal /> */}
             {/* <ApiFetch /> */}
             {/* <DebouncedInputValue /> */}
+            {/* <UseRefFile /> */}
+            {/* <UseMYMOdal /> */}
+            {/* <UseModal4 /> */}
+            {/* <DebouncedFormValue /> */}
+            {/* <TimerComponent /> */}
+            {/* <WindowFolder /> */}
+            {/* <InputLocal /> */}
         </>
     )
 }

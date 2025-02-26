@@ -4,6 +4,7 @@ import useDebounced from "./usedebouncedValue";
 const DebouncedInputValue = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+
     const debouncedName = useDebounced(name, 1000);
     console.log(debouncedName);
     const debouncedEmail = useDebounced(email , 1000);
@@ -20,6 +21,8 @@ const DebouncedInputValue = () => {
             console.log('Debounced Email :' , debouncedEmail);
         }
     },[debouncedEmail])
+
+
 
     const handleName = (e) => {
         setName(e.target.value);
