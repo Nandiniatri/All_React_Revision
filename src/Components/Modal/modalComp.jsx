@@ -26,4 +26,4 @@ const ModalContentComp = () => {
     )
 }
 
-export default ModalContentComp;
+export default ModalContentComp; 

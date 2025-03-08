@@ -1,21 +1,21 @@
 import { useEffect, useState } from "react"
+import useLocalStorage from "./CustomHookOfLocalStorage/useLocalStorage";
 
-const InputLocal = () =>{
-    const [inputvalue , setInputValue] = useState('');
+const InputLocal = () => {
+    const [inputvalue, setInputValue] = useState('');
+    const [name, setName] = useLocalStorage('name' , '');
+    // const [ key, value, localValue ] = useLocalStorage();
+    // const [] = useLocalStorage()
 
-    const handleInput = (e) =>{
+    const handlename = (e) => {
         console.log(e.target.value);
-        setInputValue(e.target.value);
+        setName(e.target.value);
     }
-
-    useEffect(() =>{
-        localStorage.setItem("inputValue" , inputvalue);
-        localStorage.getItem("inputValue" , inputvalue);
-    },[inputvalue])
 
     return (
         <div>
-            <input type="text" value={inputvalue} onChange={handleInput}/>
+            <input type="text" value={name} onChange={handlename} />
+            <label>Name:</label>
         </div>
     )
 }

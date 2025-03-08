@@ -14,6 +14,8 @@ import DebouncedFormValue from "../Debouncing/debouncedFormValue";
 import TimerComponent from "../TimerComponent/timerComponent";
 import WindowFolder from "../Window/window";
 import InputLocal from "../LocalStorageQuestion/inputlocal";
+import ImageGallery from "../ImageGallery/image";
+import Revision from "../2802025/revision";
 
 
 const ComponentFile = () => {
@@ -36,6 +38,10 @@ const ComponentFile = () => {
             {/* <TimerComponent /> */}
             {/* <WindowFolder /> */}
             {/* <InputLocal /> */}
+            {/* <ImageGallery /> */}
+            
+
+            <Revision />
         </>
     )
 }
